@@ -156,7 +156,7 @@ tS32 main(void)
     // printf("\rLM75 temp = %d.%d", temperature / 2, (temperature&1) * 5);
 
     // Buzzer ON/OFF
-    if (1) 
+    if (isTargetReached) 
     {
       IOSET0 = (1 << 7);
       printf("Buzzer ON\n");
@@ -170,12 +170,12 @@ tS32 main(void)
     // Diode ON/OFF
     if (i) 
     {
-      IOCLR0 = (1 << 8);
+      IOCLR0 = (1 << 7);
       printf("Diode ON\n");
     }
     else 
     {
-      IOSET0 = (1 << 8);
+      IOSET0 = (1 << 7);
       printf("Diode OFF\n");
     }
     i = (i + 1) % 2;

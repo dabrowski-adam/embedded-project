@@ -135,7 +135,7 @@ tS32 main(void)
 
   printf("\rInitialising IRQ");
   // Uruchomienie przerwań co 1/2 s.
-  init_irq(500, 20);
+  init_irq(1, 20);
 
   // Aktywne "mruganie" diodą
   tU8 i = 0;
@@ -160,13 +160,13 @@ tS32 main(void)
     {
       IODIR0=0xffffffff;
       IOSET0 = 0x00100000;
-      printf("Buzzer ON!!!!!!!!!!!!!!!!\n");
+      printf("Buzzer ON\n");
     }
-    else 
-    {
-      IOCLR0 = 0x00100000;
-      printf("Buzzer OFF\n");
-    }
+    // else 
+    // {
+    //   IOCLR0 = 0x00100000;
+    //   printf("Buzzer OFF\n");
+    // }
 
     // Diode ON/OFF
     // if (i) 

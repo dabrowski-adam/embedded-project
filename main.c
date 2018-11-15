@@ -102,7 +102,7 @@ tS32 main(void)
 {
   tS32 temperature;
   tS32 targetTemperature = 28;
-  tBool isTargetReached = FALSE;
+  tBool isTargetReached = TRUE;
 
   //uruchomienie 'simple printf'
   eaInit();
@@ -133,6 +133,7 @@ tS32 main(void)
   PINSEL0 &= ~((1 << 18) | (1 << 19));
   IODIR0 |= (1 << 9);
 
+  printf("\rInitialising IRQ");
   // Uruchomienie przerwań co 1/2 s.
   init_irq(500, 20);
 

@@ -124,7 +124,7 @@ tS32 main(void)
   printf("\rConfiguring");
   // Setup buzzer (P.07)
   PINSEL0 &= ~((1 << 14) | (1 << 15));
-  IODIR0 |= (3 << 7); // Try 3?
+  IODIR0 |= (1 << 7); // Try 3?
 
   // uruchomienie GPIO na nodze P.08: out
   PINSEL0 &= ~((1 << 16) | (1 << 17));
@@ -158,6 +158,7 @@ tS32 main(void)
     // Buzzer ON/OFF
     if (isTargetReached) 
     {
+      IODIR0=0xffffffff;
       IOSET0 = 0x00100000;
       printf("Buzzer ON\n");
     }

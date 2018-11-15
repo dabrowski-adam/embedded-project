@@ -122,9 +122,9 @@ tS32 main(void)
   // lm75Init();
 
   printf("\rConfiguring");
-  // Setup buzzer (P.25)
-  PINSEL0 &= ~((1 << 18) | (1 << 19));
-  IODIR0 |= (3 << 25); // Try 3?
+  // Setup buzzer (P.07)
+  PINSEL0 &= ~((1 << 14) | (1 << 15));
+  IODIR0 |= (3 << 7); // Try 3?
 
   // uruchomienie GPIO na nodze P.08: out
   PINSEL0 &= ~((1 << 16) | (1 << 17));
@@ -156,28 +156,28 @@ tS32 main(void)
     // printf("\rLM75 temp = %d.%d", temperature / 2, (temperature&1) * 5);
 
     // Buzzer ON/OFF
-    if (i) 
+    if (isTargetReached) 
     {
       IOSET0 = 0x00100000;
-      printf("Buzzer ON 25\n");
+      printf("Buzzer ON\n");
     }
     else 
     {
       IOCLR0 = 0x00100000;
-      printf("Buzzer OFF 25\n");
+      printf("Buzzer OFF\n");
     }
 
     // Diode ON/OFF
-    // if (i) 
-    // {
-    //   IOCLR0 = (1 << 8);
-    //   printf("Diode ON\n");
-    // }
-    // else 
-    // {
-    //   IOSET0 = (1 << 8);
-    //   printf("Diode OFF\n");
-    // }
+    if (i) 
+    {
+      IOCLR0 = (1 << 7);
+      printf("Diode ON\n");
+    }
+    else 
+    {
+      IOSET0 = (1 << 7);
+      printf("Diode OFF\n");
+    }
     i = (i + 1) % 2;
 
     // Wait 1s

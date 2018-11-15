@@ -72,55 +72,54 @@ END GROUP
  .text          0x0000000000000000      0x1bc startup/libea_startup_thumb.a(startup.o)
                 0x0000000000000000                _startup
  *(.text)
- .text          0x00000000000001bc      0x2c4 main.o
+ .text          0x00000000000001bc      0x2c8 main.o
                 0x0000000000000318                main
- .text          0x0000000000000480      0xce8 startup/libea_startup_thumb.a(consol.o)
-                0x0000000000000834                consolInit
-                0x00000000000008cc                consolSendChar
-                0x000000000000091c                consolSendCh
-                0x0000000000000960                consolSendString
-                0x00000000000009ac                consolSendNumber
-                0x0000000000000bd8                simplePrintf
-                0x0000000000000c18                consolGetCh
-                0x0000000000000c5c                consolGetChar
-                0x0000000000000cb8                consolGetString
-                0x0000000000000d68                consolGetIntNum
-                0x0000000000000fb8                consolScanf
- .text          0x0000000000001168      0x45c startup/libea_startup_thumb.a(framework.o)
-                0x00000000000012bc                exceptionHandlerInit
-                0x000000000000134c                lowLevelInit
-                0x0000000000001530                eaInit
- .text          0x00000000000015c4       0x90 irq/irq_handler.a(irq_handler.o)
-                0x00000000000015c4                IRQ_Test
- .text          0x0000000000001654      0x114 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_udivsi3.o)
-                0x0000000000001654                __udivsi3
-                0x0000000000001654                __aeabi_uidiv
-                0x0000000000001748                __aeabi_uidivmod
- .text          0x0000000000001768        0x4 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_dvmd_tls.o)
-                0x0000000000001768                __aeabi_ldiv0
-                0x0000000000001768                __aeabi_idiv0
- .text          0x000000000000176c       0x3c /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_aeabi_uldivmod.o)
-                0x000000000000176c                __aeabi_uldivmod
- .text          0x00000000000017a8       0x3c /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_muldi3.o)
-                0x00000000000017a8                __aeabi_lmul
-                0x00000000000017a8                __muldi3
- .text          0x00000000000017e4      0x16c /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_udivmoddi4.o)
-                0x00000000000017e4                __udivmoddi4
- .text          0x0000000000001950       0x28 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_clzdi2.o)
-                0x0000000000001950                __clzdi2
- .text          0x0000000000001978       0x48 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_clzsi2.o)
-                0x0000000000001978                __clzsi2
- .text          0x00000000000019c0        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-atoi.o)
- .text          0x00000000000019c0        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
- .text          0x00000000000019c0        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-strtol.o)
- .text          0x00000000000019c0        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
- .text          0x00000000000019c0        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-locale.o)
- .text          0x00000000000019c0        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mbtowc_r.o)
- .text          0x00000000000019c0      0x224 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-strcmp.o)
-                0x00000000000019c0                strcmp
- .text          0x0000000000001be4        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-wctomb_r.o)
- .text          0x0000000000001be4        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-ctype_.o)
- *fill*         0x0000000000001be4        0x4 00000000
+ .text          0x0000000000000484      0xce8 startup/libea_startup_thumb.a(consol.o)
+                0x0000000000000838                consolInit
+                0x00000000000008d0                consolSendChar
+                0x0000000000000920                consolSendCh
+                0x0000000000000964                consolSendString
+                0x00000000000009b0                consolSendNumber
+                0x0000000000000bdc                simplePrintf
+                0x0000000000000c1c                consolGetCh
+                0x0000000000000c60                consolGetChar
+                0x0000000000000cbc                consolGetString
+                0x0000000000000d6c                consolGetIntNum
+                0x0000000000000fbc                consolScanf
+ .text          0x000000000000116c      0x45c startup/libea_startup_thumb.a(framework.o)
+                0x00000000000012c0                exceptionHandlerInit
+                0x0000000000001350                lowLevelInit
+                0x0000000000001534                eaInit
+ .text          0x00000000000015c8       0x90 irq/irq_handler.a(irq_handler.o)
+                0x00000000000015c8                IRQ_Test
+ .text          0x0000000000001658      0x114 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_udivsi3.o)
+                0x0000000000001658                __udivsi3
+                0x0000000000001658                __aeabi_uidiv
+                0x000000000000174c                __aeabi_uidivmod
+ .text          0x000000000000176c        0x4 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_dvmd_tls.o)
+                0x000000000000176c                __aeabi_ldiv0
+                0x000000000000176c                __aeabi_idiv0
+ .text          0x0000000000001770       0x3c /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_aeabi_uldivmod.o)
+                0x0000000000001770                __aeabi_uldivmod
+ .text          0x00000000000017ac       0x3c /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_muldi3.o)
+                0x00000000000017ac                __aeabi_lmul
+                0x00000000000017ac                __muldi3
+ .text          0x00000000000017e8      0x16c /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_udivmoddi4.o)
+                0x00000000000017e8                __udivmoddi4
+ .text          0x0000000000001954       0x28 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_clzdi2.o)
+                0x0000000000001954                __clzdi2
+ .text          0x000000000000197c       0x48 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_clzsi2.o)
+                0x000000000000197c                __clzsi2
+ .text          0x00000000000019c4        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-atoi.o)
+ .text          0x00000000000019c4        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-strlen-stub.o)
+ .text          0x00000000000019c4        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-strtol.o)
+ .text          0x00000000000019c4        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+ .text          0x00000000000019c4        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-locale.o)
+ .text          0x00000000000019c4        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-mbtowc_r.o)
+ .text          0x00000000000019c4      0x224 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-strcmp.o)
+                0x00000000000019c4                strcmp
+ .text          0x0000000000001be8        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-wctomb_r.o)
+ .text          0x0000000000001be8        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-ctype_.o)
  .text.__stub   0x0000000000001be8       0x20 linker stubs
  *(.glue_7)
  .glue_7        0x0000000000001c08        0x0 linker stubs

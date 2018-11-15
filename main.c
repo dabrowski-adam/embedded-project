@@ -156,7 +156,7 @@ tS32 main(void)
     // printf("\rLM75 temp = %d.%d", temperature / 2, (temperature&1) * 5);
 
     // Buzzer ON/OFF
-    if (isTargetReached) 
+    if (i) 
     {
       IOSET0 = (1 << 25);
       printf("Buzzer ON 25\n");

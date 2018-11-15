@@ -158,12 +158,12 @@ tS32 main(void)
     // Buzzer ON/OFF
     if (i) 
     {
-      IOSET0 = (1 << 25);
+      IOSET0 = 0x00100000;
       printf("Buzzer ON 25\n");
     }
     else 
     {
-      IOCLR0 = (1 << 25);
+      IOCLR0 = 0x00100000;
       printf("Buzzer OFF 25\n");
     }
 

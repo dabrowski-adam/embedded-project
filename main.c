@@ -169,16 +169,16 @@ tS32 main(void)
     }
 
     // Diode ON/OFF
-    if (i) 
-    {
-      IOCLR0 = (1 << 7);
-      printf("Diode ON\n");
-    }
-    else 
-    {
-      IOSET0 = (1 << 7);
-      printf("Diode OFF\n");
-    }
+    // if (i) 
+    // {
+    //   IOCLR0 = (1 << 7);
+    //   printf("Diode ON\n");
+    // }
+    // else 
+    // {
+    //   IOSET0 = (1 << 7);
+    //   printf("Diode OFF\n");
+    // }
     i = (i + 1) % 2;
 
     // Wait 1s

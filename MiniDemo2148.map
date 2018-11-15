@@ -222,39 +222,39 @@ END GROUP
                 0x00000000000020a0                __ascii_wctomb
                 0x00000000000020c8                . = ALIGN (0x4)
 
-.rodata         0x00000000000020c8      0x2c9
+.rodata         0x00000000000020c8      0x2d5
  *(.rodata)
- .rodata        0x00000000000020c8       0xe0 main.o
- .rodata        0x00000000000021a8       0x18 startup/libea_startup_thumb.a(consol.o)
- .rodata        0x00000000000021c0       0xb6 startup/libea_startup_thumb.a(framework.o)
+ .rodata        0x00000000000020c8       0xec main.o
+ .rodata        0x00000000000021b4       0x18 startup/libea_startup_thumb.a(consol.o)
+ .rodata        0x00000000000021cc       0xb6 startup/libea_startup_thumb.a(framework.o)
  *(.rodata*)
- *fill*         0x0000000000002276        0x2 
+ *fill*         0x0000000000002282        0x2 
  .rodata._global_impure_ptr
-                0x0000000000002278        0x4 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
-                0x0000000000002278                _global_impure_ptr
+                0x0000000000002284        0x4 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
+                0x0000000000002284                _global_impure_ptr
  .rodata._setlocale_r.str1.4
-                0x000000000000227c        0xd /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-locale.o)
- *fill*         0x0000000000002289        0x3 
+                0x0000000000002288        0xd /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-locale.o)
+ *fill*         0x0000000000002295        0x3 
  .rodata.str1.4
-                0x000000000000228c        0x4 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-locale.o)
+                0x0000000000002298        0x4 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-locale.o)
                                           0x2 (size before relaxing)
  .rodata._ctype_
-                0x0000000000002290      0x101 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-ctype_.o)
-                0x0000000000002290                _ctype_
+                0x000000000000229c      0x101 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-ctype_.o)
+                0x000000000000229c                _ctype_
 
-.ARM.extab      0x0000000000002391        0x0
- .ARM.extab     0x0000000000002391        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_udivmoddi4.o)
+.ARM.extab      0x000000000000239d        0x0
+ .ARM.extab     0x000000000000239d        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_udivmoddi4.o)
 
-.ARM.exidx      0x0000000000002394        0x8
- .ARM.exidx     0x0000000000002394        0x8 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_udivmoddi4.o)
+.ARM.exidx      0x00000000000023a0        0x8
+ .ARM.exidx     0x00000000000023a0        0x8 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/libgcc.a(_udivmoddi4.o)
 
-.rel.dyn        0x000000000000239c        0x0
- .rel.iplt      0x000000000000239c        0x0 main.o
-                0x000000000000239c                . = ALIGN (0x4)
-                0x000000000000239c                _etext = .
+.rel.dyn        0x00000000000023a8        0x0
+ .rel.iplt      0x00000000000023a8        0x0 main.o
+                0x00000000000023a8                . = ALIGN (0x4)
+                0x00000000000023a8                _etext = .
                 [!provide]                        PROVIDE (etext = .)
 
-.data           0x0000000040000080       0x10 load address 0x000000000000239c
+.data           0x0000000040000080       0x10 load address 0x00000000000023a8
                 0x0000000040000080                _data = .
  *(.data)
  .data          0x0000000040000080        0x0 main.o
@@ -279,22 +279,22 @@ END GROUP
  .data          0x0000000040000090        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-wctomb_r.o)
  .data          0x0000000040000090        0x0 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-ctype_.o)
 
-.igot.plt       0x0000000040000090        0x0 load address 0x00000000000023ac
+.igot.plt       0x0000000040000090        0x0 load address 0x00000000000023b8
  .igot.plt      0x0000000040000090        0x0 main.o
 
 .data._impure_ptr
-                0x0000000040000090        0x4 load address 0x00000000000023ac
+                0x0000000040000090        0x4 load address 0x00000000000023b8
  .data._impure_ptr
                 0x0000000040000090        0x4 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
                 0x0000000040000090                _impure_ptr
 
 .data.impure_data
-                0x0000000040000098      0x428 load address 0x00000000000023b8
+                0x0000000040000098      0x428 load address 0x00000000000023c0
  .data.impure_data
                 0x0000000040000098      0x428 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-impure.o)
 
 .data.__global_locale
-                0x00000000400004c0      0x16c load address 0x00000000000027e0
+                0x00000000400004c0      0x16c load address 0x00000000000027e8
  .data.__global_locale
                 0x00000000400004c0      0x16c /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-locale.o)
                 0x00000000400004c0                __global_locale
@@ -302,7 +302,7 @@ END GROUP
                 0x000000004000062c                _edata = .
                 [!provide]                        PROVIDE (edata = .)
 
-.bss            0x000000004000062c        0x8 load address 0x000000000000294c
+.bss            0x000000004000062c        0x8 load address 0x0000000000002954
                 0x000000004000062c                _bss = .
                 0x000000004000062c                __bss_start = .
                 0x000000004000062c                __bss_start__ = .
@@ -340,7 +340,7 @@ END GROUP
                 0x0000000040000634                PROVIDE (end = .)
 
 .bss._PathLocale
-                0x0000000040000634        0x4 load address 0x0000000000002954
+                0x0000000040000634        0x4 load address 0x000000000000295c
  .bss._PathLocale
                 0x0000000040000634        0x4 /usr/local/Caskroom/gcc-arm-embedded/7-2018-q2-update/gcc-arm-none-eabi-7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/libc.a(lib_a-locale.o)
                 0x0000000040000634                _PathLocale

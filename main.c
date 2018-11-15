@@ -164,7 +164,7 @@ tS32 main(void)
     else 
     {
       IOCLR0 = (1 << 25);
-      printf("Buzzer OFF\n");
+      printf("Buzzer OFF 25\n");
     }
 
     // Diode ON/OFF

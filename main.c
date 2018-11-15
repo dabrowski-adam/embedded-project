@@ -160,7 +160,7 @@ tS32 main(void)
     {
       IODIR0=0xffffffff;
       IOSET0 = 0x00100000;
-      printf("Buzzer ON\n");
+      printf("Buzzer ON .\n");
     }
     else 
     {

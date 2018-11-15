@@ -159,12 +159,12 @@ tS32 main(void)
     printf("WHY?\n");
     if (isTargetReached) 
     {
-      IOSET0 = (1 << 7);
+      IOSET0 = (1 <<24);
       printf("Buzzer ON\n");
     }
     else 
     {
-      IOCLR0 = (1 << 7);
+      IOCLR0 = (1 << 24);
       printf("Buzzer OFF\n");
     }
 

@@ -1,0 +1,4 @@
+main.o: main.c general.h startup/lpc2xxx.h startup/printf_P.h \
+ startup/config.h startup/consol.h startup/ea_init.h startup/consol.h \
+ startup/config.h irq/irq_handler.h lm75/lm75.h lm75/../general.h timer.h \
+ VIC.h
